@@ -4,8 +4,11 @@ def capital_index(str)
     
     str_split = str.split("") #To return an array of individual letters of the string
     newar =  []
+    charsl = ("a".."z").to_a
+    charsu=("A".."Z").to_a
+
     for i in str_split
-       if i === i.capitalize && i
+       if charsu.include?(i)
             newar.push(str_split.index(i))
        end
 
